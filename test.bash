@@ -21,4 +21,4 @@ out=$(echo | ./plus)
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo ok
-exit $resi
+exit $res
