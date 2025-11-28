@@ -11,19 +11,19 @@
 2026年の日付に対する曜日を確認できるコマンド
 
 ## 使い方
-1.リポジトリをコピー
+### 1.リポジトリをコピー
 ```
 $ git clone https://github.com/ReiKawahigashi/robosys2025
 $ cd robosys2025
 ```
 
-2.コマンドを実行\
+### 2.コマンドを実行\
 monthに月、dayに日付を入力
 ```
 & echo "month day" | ./dow
 ```
 
-3.コマンド実行例
+### 3.コマンド実行例
 ```
 $ echo "6 2" | ./dow
 Tue.
