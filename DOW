@@ -5,10 +5,22 @@
 import sys
 
 lines = sys.stdin.read().strip().split()
+
+if len(lines) != 2:
+    sys.exit(1)
+
+if not (lines[0].isdigit() and lines[1].isdigit()):
+    sys.exit(1)
+
 month = int(lines[0])
 day = int(lines[1])
 
 nissu = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+if month < 1 or month > 12:
+    sys.exit(1)
+if day < 1 or day > nissu[month - 1]:
+    sys.exit(1)
 
 days_passed = sum(nissu[:month - 1]) + (day - 1)
 weekday = (3 + days_passed) % 7
