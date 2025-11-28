@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import sys
+
+lines = sys.stdin.read().strip().split()
+month = int(lines[0])
+day = int(lines[1])
+
+nissu = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+days_passed = sum(nissu[:month - 1]) + (day - 1)
+weekday = (3 + days_passed) % 7
+
+dayofweek = ["Mon.", "Tue.", "Wed.", "thu.", "Fri.", "Sat.", "Sun."]
+print(dayofweek[weekday])
