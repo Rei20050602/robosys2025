@@ -12,12 +12,19 @@ res=0
 out=$(echo "6 2" | ./DOW)
 [ "${out}" = Tue. ] || ng "$LINENO"
 
-out=$(echo "123 213" | ./DOW)
-[ "$?" = 1 ] || ng "$LINENO"
+out=$(echo "3 15" | ./DOW)
+[ "${out}" = Sun. ] || ng "$LINENO"
+
+out=$(echo "13 32" | ./DOW)
+[ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
-[ "$?" = 1 ] || ng "$LINENO"
+out=$(echo "abc def" | ./DOW)
+[ "$?" = 1 ]      || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo | ./DOW)
+[ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo ok
