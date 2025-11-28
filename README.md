@@ -17,7 +17,7 @@ $ git clone https://github.com/ReiKawahigashi/robosys2025
 $ cd robosys2025
 ```
 
-2.コマンドを実行
+2.コマンドを実行\
 monthに月、dayに日付を入力
 ```
 & echo "month day" | ./dow
