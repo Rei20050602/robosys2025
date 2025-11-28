@@ -9,10 +9,10 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15.0 ] || ng "$LINENO"
+out=$(echo "6 2" | ./DOW)
+[ "${out}" = Tue. ] || ng "$LINENO"
 
-out=$(echo あ| ./plus)
+out=$(echo "123 213" | ./DOW)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
