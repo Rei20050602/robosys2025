@@ -9,21 +9,21 @@ ng () {
 
 res=0
 
-out=$(echo "6 2" | ./DOW)
+out=$(echo "6 2" | ./dow)
 [ "${out}" = Tue. ] || ng "$LINENO"
 
-out=$(echo "3 15" | ./DOW)
+out=$(echo "3 15" | ./dow)
 [ "${out}" = Sun. ] || ng "$LINENO"
 
-out=$(echo "13 32" | ./DOW)
+out=$(echo "13 32" | ./dow)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo "abc def" | ./DOW)
+out=$(echo "abc def" | ./dow)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./DOW)
+out=$(echo | ./dow)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
