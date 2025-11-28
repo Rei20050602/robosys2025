@@ -2,10 +2,10 @@
 ![test](https://github.com/ReiKawahigashi/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## 目次
-1[コマンドについて]
-2[使い方]
-3[環境]
-4[ライセンス]
+1[コマンドについて]\
+2[使い方]\
+3[環境]\
+4[ライセンス]\
 
 ## コマンドについて
 2026年の日付に対する曜日を確認できるコマンド
