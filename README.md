@@ -20,7 +20,7 @@ $ cd robosys2025
 ### 2.コマンドを実行
 monthに月、dayに日付を入力
 ```
-& echo "month day" | ./dow
+$ echo "month day" | ./dow
 ```
 
 ### 3.コマンド実行例
@@ -29,7 +29,7 @@ $ echo "6 2" | ./dow
 Tue.
 ```
 ```
-echo "13 32" | ./dow
+$ echo "13 32" | ./dow
 ```
 存在しない日付だと何も表示されない
 
